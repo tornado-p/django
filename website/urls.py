@@ -3,5 +3,5 @@ from django.urls import path, re_path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path('^music/$', include('music.urls')),
+    path('music/', include('music.urls')),
     ]
